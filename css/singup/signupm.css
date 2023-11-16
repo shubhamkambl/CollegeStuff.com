@@ -1,0 +1,87 @@
+body {
+    font-size: 25px;
+  font-family: Arial;
+  color: black;
+}
+
+.split {
+    
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  z-index: 1;
+  top: 1;
+  overflow-x: hidden;
+  padding-top: 15px;
+}
+
+.left1{
+  left: 0;
+  background-image: url(yellow.jpg);
+}
+
+.right1{
+  right: 0;
+  background-image: url(loginbg.jpg);
+}
+ .left2{
+  left: 683px;
+  background-image: url(yellow.jpg);
+}
+
+.right2{
+  right: 683px;
+  background-image: url(loginbg.jpg);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+   
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

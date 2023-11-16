@@ -1,0 +1,47 @@
+body{
+    background-image: url("white.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+p{
+  color: white;
+  font-size: : 25px;
+}
+
+input[type=text], input[type=password],input[type=date],input[type=email] ,input[select],input[type=textarea],input[type=text]{
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.sel{
+     width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+    
+}
+#btn,#res,#can,input[type=button],input[type=submit]{
+    background-color: green;
+    border-radius: 12px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+#btn,#res,#can,input[type=button]:hover{
+    cursor: pointer;
+}
+p{
+    color: white;
+}
+

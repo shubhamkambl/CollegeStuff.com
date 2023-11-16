@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/sty.css" type="text/css"/>
+        <link rel="stylesheet" href="css/ani.css" type="text/css"/>
+         <link rel="stylesheet" href="css/login/nav.css" type="text/css"/>    
+         <link rel="stylesheet" href="css/hovers.css" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesom/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="css/IMG_20190906_133050.jpg">
+    </head>
+    <body>
+        
+        
+        <div class="navbar">
+            
+  <a href="#">Help</a>
+  <div class="dropdown">
+    <button class="dropbtn">LogIn
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="login.html">Student</a>
+      <a href="teacherlogin.html">Techer</a>
+      <a href="eventlogin.html">Event Manager</a>
+    <a href="#">Other</a>
+    <a href="adminlogin.html">Admin</a>
+    </div>
+  </div>
+  <a href="signlink.html">SignUp</a>
+  <a href="index.html">Home</a>
+  <input type="submit" name="sub" value="Search"/>
+  <input type="text" name="search" placeholder="Search..."/>
+<img src="css/logoma.jpeg" align="left" width="200" height="46">
+</div>
+        <div class="higlights">
+        </div>
+        <br>
+        
+        <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:500,$Delay:12,$Cols:10,$Rows:5,$Opacity:2,$Clip:15,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:2049,$Easing:$Jease$.$OutQuad},
+              {$Duration:500,$Delay:40,$Cols:10,$Rows:5,$Opacity:2,$Clip:15,$SlideOut:true,$Easing:$Jease$.$OutQuad},
+              {$Duration:1000,x:-0.2,$Delay:20,$Cols:16,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Assembly:260,$Easing:{$Left:$Jease$.$InOutExpo,$Opacity:$Jease$.$InOutQuad},$Opacity:2,$Outside:true,$Round:{$Top:0.5}},
+              {$Duration:1600,y:-1,$Delay:40,$Cols:24,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Easing:$Jease$.$OutJump,$Round:{$Top:1.5}},
+              {$Duration:1200,x:0.2,y:-0.1,$Delay:16,$Cols:10,$Rows:5,$Opacity:2,$Clip:15,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$Jease$.$InWave,$Top:$Jease$.$InWave,$Clip:$Jease$.$OutQuad},$Round:{$Left:1.3,$Top:2.5}},
+              {$Duration:1500,x:0.3,y:-0.3,$Delay:20,$Cols:10,$Rows:5,$Opacity:2,$Clip:15,$During:{$Left:[0.2,0.8],$Top:[0.2,0.8]},$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$Jease$.$InJump,$Top:$Jease$.$InJump,$Clip:$Jease$.$OutQuad},$Round:{$Left:0.8,$Top:2.5}},
+              {$Duration:1500,x:0.3,y:-0.3,$Delay:20,$Cols:10,$Rows:5,$Opacity:2,$Clip:15,$During:{$Left:[0.1,0.9],$Top:[0.1,0.9]},$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$Jease$.$InJump,$Top:$Jease$.$InJump,$Clip:$Jease$.$OutQuad},$Round:{$Left:0.8,$Top:2.5}}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 053 css*/
+        .jssorb053 .i {position:absolute;cursor:pointer;}
+        .jssorb053 .i .b {fill:#fff;fill-opacity:0.5;}
+        .jssorb053 .i:hover .b {fill-opacity:.7;}
+        .jssorb053 .iav .b {fill-opacity: 1;}
+        .jssorb053 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 093 css*/
+        .jssora093 {display:block;position:absolute;cursor:pointer;}
+        .jssora093 .c {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+        .jssora093 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+        .jssora093:hover {opacity:.8;}
+        .jssora093.jssora093dn {opacity:.6;}
+        .jssora093.jssora093ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="css/s2.png" />
+            </div>
+            <div>
+                <img data-u="image" src="css/s3.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="css/s5.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="css/mindspark.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="css/workshop.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/016.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb053" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <path class="b" d="M11400,13800H4600c-1320,0-2400-1080-2400-2400V4600c0-1320,1080-2400,2400-2400h6800 c1320,0,2400,1080,2400,2400v6800C13800,12720,12720,13800,11400,13800z"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="c" cx="8000" cy="8000" r="5920"></circle>
+                <polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+                <line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="c" cx="8000" cy="8000" r="5920"></circle>
+                <polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+                <line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+        <!--div class="bgslide">
+            
+        <div class="slideshow-container">
+
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            
+  <div align="center" class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="css/s2.png" style="width:70%;height:350px">
+   
+  </div>
+            <div align="center" class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="css/workshop1.jpg" style="width:70%;height:350px">
+   
+  </div>
+
+  <div align="center" class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="css/s1.jpg" style="width:70%;height:350px">
+   
+  </div>
+
+  <div align="center" class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="css/s4.jpg" style="width:70%;height:350px">
+    <div class="text"></div>
+  </div>
+    
+    <div align="center" class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="css/s5.jpg" style="width:70%;height:350px">
+    <div class="text"></div>
+  </div>
+
+<div align="center" class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="css/s3.jpeg" style="width:70%;height:350px">
+   
+  </div>            
+            
+            
+ 
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+     </div>       
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div-->
+ 
+        
+<div class="bg_org"> 
+<div class="org" align="center">
+ 
+            <h1>Associations and Organisations</h1>
+    <div class="row">
+  
+        <ul class="ch-grid">
+        <li>
+        <div class="col-sm-6">
+ 
+    <!-- normal -->
+    <div class="ih-item circle effect19"><a href="#">
+        <div class="img"><img src="img/acm.png" alt="img"></div>
+        <div class="info">
+          <h3>Association for Computing Machinery</h3>
+          
+        </div></a></div>
+    <!-- end normal -->
+ 
+  </div></li>
+    
+    <li>
+  <div class="col-sm-6">
+ 
+    <!-- colored -->
+    <div class="ih-item circle effect19"><a href="#">
+        <div class="img"><img src="img/iste.png" alt="img"></div>
+        <div class="info">
+          <h3>Indian Society for Technical Education</h3>
+          
+        </div></a></div>
+        </div>
+            </li>
+      <!------------>
+            
+             <li>
+  <div class="col-sm-6">
+       <div class="ih-item circle effect19"><a href="#">
+        <div class="img"><img src="css/itsa.jpg" alt="img"></div>
+        <div class="info">
+          <h3>Information Technology Student Association</h3>
+       
+        </div></a></div>
+       </div>
+            </li>
+          <!------------>
+            <li>
+  <div class="col-sm-6">
+       <div class="ih-item circle effect19"><a href="#">
+        <div class="img"><img src="css/mesa.jpg" alt="img"></div>
+        <div class="info">
+          <h3>Mechanical Engineering Student Association</h3>
+          
+        </div></a></div>
+    <!-- end colored -->
+ 
+  </div>
+            </li>
+        </ul>
+    </div>
+   <!--ul class="ch-grid"> 
+
+  
+       <!li>
+	<div class="ch-item ch-img-1">				
+		<div class="ch-info-wrap">
+			<div class="ch-info">
+				<div class="ch-info-front ch-img-1"></div>
+				<div class="ch-info-back">
+					<h3>ITSA</h3>
+					<p>Information technology student association<a href="#">.</a></p>
+				</div>	
+			</div>
+		</div>
+	</div>
+</li> 
+       <li>
+	<div class="ch-item ch-img-2">				
+		<div class="ch-info-wrap">
+			<div class="ch-info">
+				<div class="ch-info-front ch-img-2"></div>
+				<div class="ch-info-back">
+					<h3>ACM</h3>
+					<p>student chapter<a href="#">.</a></p>
+				</div>	
+			</div>
+		</div>
+	</div>
+</li>
+      <li>
+	<div class="ch-item ch-img-3">				
+		<div class="ch-info-wrap">
+			<div class="ch-info">
+				<div class="ch-info-front ch-img-3"></div>
+				<div class="ch-info-back">
+					<h3>ISTE</h3>
+					<p>Indian Society for Technical Education <a href="#">.</a></p>
+				</div>	
+			</div>
+		</div>
+	</div>
+</li>
+         <li>
+	<div class="ch-item ch-img-4">				
+		<div class="ch-info-wrap">
+			<div class="ch-info">
+				<div class="ch-info-front ch-img-4"></div>
+				<div class="ch-info-back">
+					<h3>MESA</h3>
+					<p>Mechanical Engineering Student Association <a href="#">.</a></p>
+				</div>	
+			</div>
+		</div>
+	</div>
+</li>
+    </ul-->
+    
+</div>
+        </div>
+ <div>       
+<div class="inform">
+    <a href="aboutus.html">About us</a> 
+    <a href="contactus.html">Contact us</a>
+  
+    <a href="#">Gallery</a>
+    <a href="formpage.html">Feedback</a>
+    <i class="fab fa-facebook-f"></i>
+    <p style="color: white;">Developed by:DSS Skybucks</p>
+    <p style="color:white;">Developers:Shubham Kamble,Shreyas Chate,Devyani Jadhav</p>
+    <center><img src="css/IMG_20190906_133050.jpg" width="100"height="100"></center>
+    </div>
+        <br>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/ui.js"></script>
+     <script>"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap"</script></div>
+    </body>
+</html>
